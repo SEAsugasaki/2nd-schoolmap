@@ -148,7 +148,9 @@ const getDisplayName = (node) => {
   // shortest path calculation
   // ---------------------
   const getShortestPath = (startId, goalId) => {
-    const dist = {};
+    console.log("startId:", startId, typeof startId);
+　　　console.log("goalId:", goalId, typeof goalId);
+　　　console.log("sample node id type:", nodes[0]?.id, typeof nodes[0]?.id);    const dist = {};
     const prev = {};
     const unvisited = new Set(nodes.map(n => n.id));
 

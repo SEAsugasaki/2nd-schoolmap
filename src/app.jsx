@@ -171,10 +171,10 @@ const getDisplayName = (node) => {
         if (!fromNode || !toNode) return;
 
         // tf が true (または "t") でない場合、ここは通れないと判断してスキップ
-        const isFromValid = fromNode.tf === true || fromNode.tf === "t";
-        const isToValid = toNode.tf === true || toNode.tf === "t";
+        //const isFromValid = fromNode.tf === true || fromNode.tf === "t";
+        //const isToValid = toNode.tf === true || toNode.tf === "t";
 
-        if (!isFromValid || !isToValid) return;
+        //if (!isFromValid || !isToValid) return;
 
         if (e.from === u && unvisited.has(e.to)) {
           const alt = dist[u] + (e.cost ?? 1);
